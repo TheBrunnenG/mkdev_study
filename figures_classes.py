@@ -1,5 +1,5 @@
 class Figure:
-    def color(self, color, side):
+    def __init__(self, color, side):
         self.color = color
         self.side = side
 
