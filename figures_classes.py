@@ -1,23 +1,19 @@
 class Figure:
-    pass
+    def color(self, color):
+        self.color = color
 
 
 class Square(Figure):
-    def side(self):
-        return ("Атрибут стороны квадрата")
-    def color(self):
-        return ("Атрибут цвета квадрата")
+    def side(self, side):
+        self.side = side
 
 
 class Circle(Figure):
-    def diameter(self):
-        return("Атрибут диаметра круга")
-    def color(self):
-        return ("Атрибут цвета круга")
+    def radius(self, radius):
+        self.radius = radius
 
 
 class Triangle(Figure):
-    def side(self):
-        return ("Атрибут стороны треугольника")
-    def color(self):
-        return ("Атрибут цвета треугольника")
+    def side(self, side):
+        self.side = side
+
