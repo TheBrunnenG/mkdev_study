@@ -1,19 +1,17 @@
 class Figure:
-    def color(self, color):
+    def color(self, color, side):
         self.color = color
+        self.side = side
 
 
 class Square(Figure):
-    def side(self, side):
-        self.side = side
+    pass
 
 
 class Circle(Figure):
-    def radius(self, radius):
-        self.radius = radius
+    pass
 
 
 class Triangle(Figure):
-    def side(self, side):
-        self.side = side
+    pass
 
