@@ -13,34 +13,43 @@ class Figure:
 class Square(Figure):
     def square(self, side):
         return side ** 2
-    @property
-    def description(self):
-        return (self.color, self.side)
+
     @staticmethod
-    def perimeter(side):
-        return 4 * side
+    def description(desc):
+        print("descriprion", desc)
+        return desc
+
+    @property
+    def perimeter(self):
+        return self.side * 4
 
 
 class Circle(Figure):
     def square(self, side):
         return pi * side ** 2
-    @property
-    def description(self):
-        return (self.color, self.side)
+
     @staticmethod
-    def perimeter(side):
-        return 2 * pi * side
+    def description(desc):
+        print("descriprion", desc)
+        return desc
+
+    @property
+    def perimeter(self):
+        return 2 * pi * self.side
 
 
 class Triangle(Figure):
     def square(self, side):
         return sqrt(3) / 4 * side ** 2
-    @property
-    def description(self):
-        return (self.color, self.side)
+
     @staticmethod
-    def perimeter(side):
-        return 3 * side
+    def description(desc):
+        print("descriprion", desc)
+        return desc
+
+    @property
+    def perimeter(self):
+        return 3 * self.side
 
 
 # создадим три фигуры из классов Square, Circle и Figure
@@ -49,12 +58,12 @@ second_figure = Circle("orange", 15)
 third_figure = Triangle("yellow", 30)
 
 # выведем информацию о фигурах и их атрибутах
-print("First figure, parameters (color, side):", first_figure.description)
-print("First figure, perimeter:", first_figure.perimeter(first_figure.side))
-print("Second figure, parameters (color, side):", second_figure.description)
-print("Second figure, perimeter:", second_figure.perimeter(second_figure.side))
-print("Third figure, parameters (color, side)", third_figure.description)
-print("Third figure, perimeter:", third_figure.perimeter(third_figure.side))
+print("First figure, parameters (color, side):", Square.description)
+print("First figure, perimeter:", Square.perimeter)
+print("Second figure, parameters (color, side):", Circle.description)
+print("Second figure, perimeter:", Circle.perimeter)
+print("Third figure, parameters (color, side)", Triangle.description)
+print("Third figure, perimeter:", Triangle.perimeter)
 
 # вывод площади фигур через методы, встроенные в классы каждой фигуры
 print(first_figure.square(side=first_figure.side))
