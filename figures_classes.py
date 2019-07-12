@@ -16,7 +16,7 @@ class Square(Figure):
 
     @staticmethod
     def description(desc):
-        print("descriprion", desc)
+        print(desc)
         return desc
 
     @property
@@ -30,7 +30,7 @@ class Circle(Figure):
 
     @staticmethod
     def description(desc):
-        print("descriprion", desc)
+        print(desc)
         return desc
 
     @property
@@ -44,7 +44,7 @@ class Triangle(Figure):
 
     @staticmethod
     def description(desc):
-        print("descriprion", desc)
+        print(desc)
         return desc
 
     @property
@@ -58,11 +58,11 @@ second_figure = Circle("orange", 15)
 third_figure = Triangle("yellow", 30)
 
 # выведем информацию о фигурах и их атрибутах
-print("First figure, parameters (color, side):", Square.description)
+Square.description("Square's description")
 print("First figure, perimeter:", Square.perimeter)
-print("Second figure, parameters (color, side):", Circle.description)
+Circle.description("Circle's description")
 print("Second figure, perimeter:", Circle.perimeter)
-print("Third figure, parameters (color, side)", Triangle.description)
+Triangle.description("Triangle's description")
 print("Third figure, perimeter:", Triangle.perimeter)
 
 # вывод площади фигур через методы, встроенные в классы каждой фигуры
