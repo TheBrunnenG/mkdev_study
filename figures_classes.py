@@ -59,11 +59,11 @@ third_figure = Triangle("yellow", 30)
 
 # выведем информацию о фигурах и их атрибутах
 Square.description("Square's description")
-print("First figure, perimeter:", Square.perimeter)
+print("First figure, perimeter:", first_figure.perimeter)
 Circle.description("Circle's description")
-print("Second figure, perimeter:", Circle.perimeter)
+print("Second figure, perimeter:", second_figure.perimeter)
 Triangle.description("Triangle's description")
-print("Third figure, perimeter:", Triangle.perimeter)
+print("Third figure, perimeter:", third_figure.perimeter)
 
 # вывод площади фигур через методы, встроенные в классы каждой фигуры
 print(first_figure.square(side=first_figure.side))
